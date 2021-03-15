@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>My Portfolio | Hakim Nurubay</title>
+		<description>15 year old Hakim Nurubay (𝓗𝓪𝓴𝓲𝓶) has always had an incredibly large passion for music. has always had an incredibly large passion for music.</description>		
+		<link>https://hakimnurubay.github.io</link>
+		<atom:link href="hakimnurubay.github.io/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>My Portfolio | Hakim Nurubay</title>
+				<description>15 year old Hakim Nurubay (𝓗𝓪𝓴𝓲𝓶) has always had an incredibly large passion for music. has always had an incredibly large passion for music.</description>
+				<pubDate>2021-03-15T09:37:00+08:00</pubDate>
+                <link>https://hakimnurubay.github.io</link>
+				<guid isPermaLink="true">https://hakimnurubay.github.io</guid>
+			</item>
+	</channel>
+</rss>
