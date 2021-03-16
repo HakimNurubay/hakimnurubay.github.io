@@ -3,6 +3,18 @@
   background-color: #f4c4b4;
 }
 
+.mypicture {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.mypicture:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 #subscriptions {
   background-color: #f4c4b4;
 }
