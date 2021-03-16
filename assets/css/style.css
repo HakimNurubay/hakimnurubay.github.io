@@ -1,3 +1,15 @@
+h1 {
+  font-family: sans-francisco, helvetica-neue, playfair;
+}
+
+h2 {
+  font-family: sans-francisco, helvetica-neue, playfair;
+}
+
+p {
+  font-family: sans-francisco, helvetica-neue, playfair;
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #f4c4b4;
