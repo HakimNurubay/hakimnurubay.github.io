@@ -1,13 +1,13 @@
 h1 {
-  font-family: sans-francisco, helvetica-neue, Playfair Display;
+  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 h2 {
-  font-family: sans-francisco, helvetica-neue, Playfair Display;
+  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 p {
-  font-family: sans-francisco, helvetica-neue, Playfair Display;
+  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 .jumbotron {
