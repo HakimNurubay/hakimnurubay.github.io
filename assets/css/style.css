@@ -1,19 +1,16 @@
-@font-face {
-  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
-}
 body {
-  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 h1 {
-  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 h2 {
-  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 p {
-  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
 
 .jumbotron {
