@@ -1,3 +1,9 @@
+@font-face {
+  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+}
+body {
+  font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+}
 h1 {
   font-family: sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
 }
