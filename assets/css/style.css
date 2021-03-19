@@ -16,6 +16,7 @@ p {
 .jumbotron {
   padding-top: 6rem;
   background-color: #f4c4b4;
+  overflow: hidden;
 }
 
 .mypicture {
