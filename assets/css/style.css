@@ -1,16 +1,23 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+@font-face {
+  font-family: "default-font";
+  src: url("../font/SF-Compact-Text-Regular.otf");
 }
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../font/playfairdisplay-regular.ttf");
+}
+
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: Playfair;
 }
 
 h2 {
-  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: Playfair;
 }
 
 p {
-  font-family: -apple-system, BlinkMacSystemFont, sans-francisco, helvetica-neue, Playfair Display, BlinkMacSystemFont;
+  font-family: default-font;
 }
 
 .jumbotron {
