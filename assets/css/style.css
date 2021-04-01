@@ -8,6 +8,10 @@
   src: url("../font/playfairdisplay-regular.ttf");
 }
 
+.font-nav {
+  font-family: Playfair;
+}
+
 h1 {
   font-family: Playfair;
 }
