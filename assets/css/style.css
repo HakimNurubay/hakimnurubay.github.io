@@ -8,6 +8,15 @@
   src: url("../font/playfairdisplay-regular.ttf");
 }
 
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
 .font-nav {
   font-family: Playfair;
 }
