@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
-
-    <!-- AOS -->
-    <link href="assets/css/aos.css" rel="stylesheet" />
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Font Awesome -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <title>My Portfolio | Hakim Nurubay</title>
 
     <!-- Icon Webpages -->
     <link rel="icon" href="assets/img/logo-icon.jpg" type="image/jpg" />
 
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet" />
+
     <!-- RSS Feed -->
     <link rel="alternate" type="application/atom+xml" title="My Portfolio | Hakim Nurubay" href="/feed.xml" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/vendor/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,8 +35,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <title>My Portfolio | Hakim Nurubay</title>
 
     <!-- Begin Hakim SEO tag v2.6.1 -->
     <meta name="generator" content="Jekyll v4.2.0" />
@@ -72,284 +73,260 @@
     </script>
     <!-- End Hakim SEO tag -->
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #564641">
-      <div class="container">
-        <a class="navbar-brand font-nav" href="">Hakim Nurubay</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active font-nav" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-nav" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-nav" href="#music">Music Videos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-nav" href="#contact">Contact</a>
-            </li>
+  <body>
+    <!-- Header -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div id="logo">
+          <h1><a href="">Hakim Nurubay</a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#music">Music Videos</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
-        </div>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-    </nav>
-    <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="assets/img/hakimn.jpg" alt="Hakim Nurubay" width="200" class="rounded-circle img-thumbnail mypicture" />
-      <h1 class="display-4">Hakim Nurubay</h1>
-      <p class="lead" data-aos="zoom-in" data-aos-delay="1000" data-aos-once="true">Artist | Content Creator</p>
-    </section>
-    <section style="background-color: #f4c4b4; padding: 0px">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L40,64C80,96,160,160,240,165.3C320,171,400,117,480,80C560,43,640,21,720,21.3C800,21,880,43,960,64C1040,85,1120,107,1200,112C1280,117,1360,107,1400,101.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-            <p>
-              15 year old Hakim Nurubay (𝓗𝓪𝓴𝓲𝓶) has always had an incredibly large passion for music. has always had an incredibly large passion for music. he's a beginner web programmer, he's like learn new things. he's made a website
-              <a href="https://www.crupuk.com/">Hakim Official</a> in 2020. you can subscribe him YouTube Channel <a href="https://www.youtube.com/channel/UCScOccW5nDku-ypJc4AW99Q">Hakim Nurubay</a> Thank you for you guys who have
-              subscribed to him YouTube Channel.
-            </p>
-          </div>
-        </div>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/hakimn.jpg" alt="Hakim Nurubay" width="200" class="rounded-circle img-thumbnail mypicture" />
+        <h1 class="display-4">Hakim Nurubay</h1>
+        <p style="color: #ffffff">Artist | Content Creator</p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f4c4b4"
-          fill-opacity="1"
-          d="M0,96L60,122.7C120,149,240,203,360,192C480,181,600,107,720,117.3C840,128,960,224,1080,245.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- End About -->
+    <!-- End Hero Section -->
 
-    <!-- Music Video List -->
-    <section id="music">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Music Video</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6 mb-3 mypicture" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="videowrapper"><iframe width="854" height="480" class="d-block w-100" src="https://www.youtube.com/embed/GvlXyqXq62w" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+    <main id="main">
+        <!-- About Section -->
+        <section id="about">
+          <div class="container" data-aos="fade-up">
+            <div class="row about-container">
+              <div class="col-lg-6 content order-lg-1 order-2">
+                <h2 class="title">Few Words About Me</h2>
+                <p>
+                    15 year old Hakim Nurubay (𝓗𝓪𝓴𝓲𝓶) has always had an incredibly large passion for music. has always had an incredibly large passion for music. he's a beginner web programmer, he's like learn new things. he's made a website
+                    <a href="https://www.crupuk.com/">Hakim Official</a> in 2020. you can subscribe him YouTube Channel <a href="https://www.youtube.com/channel/UCScOccW5nDku-ypJc4AW99Q">Hakim Nurubay</a> Thank you for you guys who have
+                    subscribed to him YouTube Channel.
+                </p>
+  
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon"><i class="bi bi-laptop"></i></div>
+                  <h4 class="title"><a href="">UI/UX Designer</a></h4>
+                  <p class="description">I love to Design, and I love to be UI/UX Designer either.</p>
                 </div>
-                <div class="carousel-item">
-                  <div class="videowrapper"><iframe width="854" height="480" class="d-block w-100" src="https://www.youtube.com/embed/KHXGpRua9Xg" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+  
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon"><i class="bi bi-display"></i></div>
+                  <h4 class="title">Website Developer</h4>
+                  <p class="description">I love to coding a website, and I have make some website either.</p>
                 </div>
-                <div class="carousel-item">
-                  <div class="videowrapper"><iframe width="854" height="480" class="d-block w-100" src="https://www.youtube.com/embed/3v_reo7Scu0" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+  
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon"><i class="bi bi-controller"></i></div>
+                  <h4 class="title">Gamer</h4>
+                  <p class="description">besides that I'm also good at playing games, and I playing some games either.</p>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+  
+              <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+            </div>
+          </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Facts Section-->
+      <section id="facts">
+        <div class="container" data-aos="fade-up">
+          <div class="row counters justify-content-center">
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Music Cover</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Website Created</p>
             </div>
           </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,96L26.7,101.3C53.3,107,107,117,160,117.3C213.3,117,267,107,320,128C373.3,149,427,203,480,213.3C533.3,224,587,192,640,186.7C693.3,181,747,203,800,176C853.3,149,907,75,960,85.3C1013.3,96,1067,192,1120,213.3C1173.3,235,1227,181,1280,160C1333.3,139,1387,149,1413,154.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Music Video List -->
+      </section>
+      <!-- End Facts Section -->
 
-    <!-- Contact -->
-    <section id="instagram-feed">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-4a8f860b-80ba-43e8-b8fc-9be38bd5044f"></div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f4c4b4"
-          fill-opacity="1"
-          d="M0,64L30,74.7C60,85,120,107,180,122.7C240,139,300,149,360,149.3C420,149,480,139,540,154.7C600,171,660,213,720,218.7C780,224,840,192,900,154.7C960,117,1020,75,1080,74.7C1140,75,1200,117,1260,133.3C1320,149,1380,139,1410,133.3L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Contact -->
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank You!</strong> Your message has been received.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <!-- Music Videos Section -->
+      <section id="music">
+        <div class="countainer" data-aos="fade-up">
+            <div class="section-header mb-3">
+                <h3 class="section-title">Music Videos</h3> 
             </div>
-            <form name="my-portfolio-contact-form">
-              <div class="row g-3">
-                <div class="col mb-3">
-                  <input type="text" class="form-control" id="name" aria-describedby="name" name="name" placeholder="Name" required />
-                </div>
-                <div class="col mb-3">
-                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Email" required />
-                </div>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="subject" aria-describedby="email" name="subject" placeholder="Subject" required />
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="message" rows="3" name="message" placeholder="Type your message here..." required></textarea>
-              </div>
-              <button type="submit" class="btn text-white btn-send" style="background-color: #564641">Submit</button>
-              <button class="btn text-white btn-loading d-none" style="background-color: #564641" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="10"
-          d="M0,192L30,208C60,224,120,256,180,245.3C240,235,300,181,360,181.3C420,181,480,235,540,261.3C600,288,660,288,720,272C780,256,840,224,900,218.7C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,250.7C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Contact -->
+            <div class="carousel-wrap">
+                <div class="owl-carousel owl-theme">
 
-    <!-- Subscriptions Email -->
-    <section id="subscriptions">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Subscribe Form</h2>
-          </div>
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/GvlXyqXq62w" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/KHXGpRua9Xg" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/3v_reo7Scu0" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/i-hhRG1Z06g" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/tAyFJjbSlw0" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="videowrapper"><iframe class="d-block w-100" src="https://www.youtube.com/embed/WV_l_kFDCnw" frameborder="0" gesture="media" allowfullscreen="true" alt="Music Videos"> </iframe></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col col-md-4">
-            <form
-              action="https://feedburner.google.com/fb/a/mailverify?uri=HakimNurubay"
-              method="post"
-              onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=HakimNurubay', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"
-              target="popupwindow"
-            >
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" />
+      </section>
+      <!-- End Music Videos Section -->
+
+      <!-- Instafeed -->
+      <section id="instagram-feed">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header mb-3">
+                <h3 class="section-title">Follow me on Instagram</h3> 
+            </div>
+            <div class="news-wrap">
+                <center>
+                    <div id="instafeed" class="img-hover-zoom row row-cols-1 row-cols-sm-2 row-cols-md-3 gallery news-item img-fluid" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p>
+                        <div class="btn btn-primary btn-sm loadmore">Load More</div>
+                    </p>
+                </center>
+            </div>
+        </div>
+      </section>
+      <!-- End Instafeed -->
+
+      <!-- Contact Me -->
+      <section id="contact">
+          <div class="container">
+              <div class="section-header">
+                  <h3 class="section-title">Contact Me</h3>
               </div>
-              <center><button type="submit" class="btn btn-primary" style="width: auto">Submit</button></center>
-            </form>
+            <center>
+              <p class="section-description"><a href="mailto:ikhwanhakimnurubay@gmail.com">ikhwanhakimnurubay@gmail.com</a></p>
+              <div class="social-links">
+                <a href="https://youtube.com/channel/UCScOccW5nDku-ypJc4AW99Q" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/hakim.nurubay/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/hakimn_world/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/HakimNurubay" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://www.tiktok.com/@hakimn_world?lang=en" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </center>
           </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#564641"
-          fill-opacity="10"
-          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Subscriptions Email -->
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-md-8">
+                <div class="form">
+                  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                    <strong>Thank You!</strong> Your message has been received.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <form name="my-portfolio-contact-form" class="php-email-form">
+                    <div class="row g-3">
+                      <div class="form-group col mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required />
+                      </div>
+                      <div class="form-group col mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="form-group mt-3 my-3">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <div class="text-center"><button type="submit" class="btn btn-primary text-white btn-send">Submit</button></div>
+                    <div class="text-center"><button class="btn btn-primary text-white btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- End Contact Me -->
+
+    </main>
+    <!-- End #main -->
 
     <!-- Footer -->
-    <footer class="text-white text-center pb-5" style="background-color: #564641">
-      <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/hakim.nurubay/" target="_blank" role="button"><i class="fa fa-facebook-f"></i></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hakimn_world/" target="_blank" role="button"><i class="fa fa-instagram"></i></a>
-
-          <!-- YouTube -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://youtube.com/channel/UCScOccW5nDku-ypJc4AW99Q" rel="nofollow" target="_blank" role="button"><i class="fa fa-youtube"></i></a>
-
-          <!-- WhatsApp -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/HakimNurubay" target="_blank" role="button"><i class="fa fa-github"></i></a>
-        </section>
-        <!-- Section: Social media -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container"></div>
       </div>
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.crupuk.com/" class="text-white fw-bold">Hakim Nurubay</a></p>
+
+      <div class="container">
+        <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <strong>Hakim Nurubay</strong>. All Rights Reserved</div>
+        <div class="credits">
+          Designed by <a href="https://www.crupuk.com/">Hakim Nurubay</a>
+        </div>
+      </div>
     </footer>
     <!-- End Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/aos.js"></script>
+    <a class="back-to-top d-flex align-items-center justify-content-center" id="tombolScrollTop" onclick="scrolltotop()"><i class="bi bi-arrow-up-short"></i></a>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets//font-awesome/js/all.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/instafeed/instafeed.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendor/owl-carousel/js/owl.carousel.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Scroll Top -->
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxiQ66IibRENk6MvpZg2nma8hkbZ2RSmZE2Lj58AT4Y1vsvyfgjJkB98hWj-8m7d8pY/exec";
-      const form = document.forms["my-portfolio-contact-form"];
-      const btnSend = document.querySelector(".btn-send");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+    $(document).ready(function(){
+    $(window).scroll(function(){
+    if ($(window).scrollTop() > 100) {
+      $('#tombolScrollTop').fadeIn();
+    } else {
+      $('#tombolScrollTop').fadeOut();
+    }
+    });
+    });
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle("d-none");
-        btnSend.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnSend.classList.toggle("d-none");
-            myAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
+    function scrolltotop()
+    {
+    $('html, body').animate({scrollTop : 0},400);
+    }
     </script>
+    <!-- End Scroll Top -->
 
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
