@@ -98,7 +98,7 @@ h6 {
 }
 
 #header #logo h1 {
-  font-size: 23px;
+  font-size: 18px;
   margin: 0;
   line-height: 1;
   font-family: Playfair;
@@ -110,7 +110,7 @@ h6 {
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #fff;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 #header #logo img {
