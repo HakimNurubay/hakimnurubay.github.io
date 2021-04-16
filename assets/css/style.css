@@ -746,27 +746,30 @@ span.img-text:hover {
 .gallery {
   grid-template-columns: 1fr 1fr;
 }
-.img-hover-zoom {
-  position: relative;
-  overflow: hidden;
-}
-.img-hover-zoom img {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-}
-.img-hover-zoom:hover .kotak img {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}
 .instaimg img {
-  margin-bottom: 30px;
+  margin: auto;
+  margin-bottom: 20px;
   width: 280px;
   height: 280px;
+  overflow: hidden;
 }
 .instaimg img:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -webkit-opacity: 0.8;
+}
+.instaimg:hover .text {
+  opacity: 1;
+  transform: translate();
+}
+.text {
+  color: black;
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translate();
 }
 /* Contact Section
 --------------------------------*/
