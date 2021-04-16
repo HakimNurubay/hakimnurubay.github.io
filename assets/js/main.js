@@ -257,7 +257,7 @@
         limit: 12,
         resolution: "thumbnail",
         accessToken: 'IGQVJXbHlfLWtQcDNBOXp5aUxQdklmSWRWRjhkazdmWG9tN1RhUGNKNjJiRlhJY3VJUlBQa3RqbnZAEMFdmTzdoMVRXSGZACckNjSlVhWXZAhVWRxdGd2Tnh1Y05OSnFiV2llUXZAWZAU5DNVlTYlROMmUtYQZDZD',
-		template: '<div class="col gallery instaimg"><a href="{{image}}" title="{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption" class="img-fluid"/></a><div class="text">{{caption}}</div></div>',
+		template: '<div class="col gallery instaimg"><a href="{{image}}" title="{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption" class="img-fluid"/></a></div>',
 	});
 	
   // call feed.next() on button click

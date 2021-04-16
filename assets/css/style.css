@@ -758,7 +758,7 @@ span.img-text:hover {
   -moz-opacity: 0.8;
   -webkit-opacity: 0.8;
 }
-.instaimg:hover .text {
+/* .instaimg:hover .text {
   opacity: 1;
   transform: translate();
 }
@@ -770,7 +770,7 @@ span.img-text:hover {
   transition: all 0.5s ease-in-out;
   opacity: 0;
   transform: translate();
-}
+} */
 /* Contact Section
 --------------------------------*/
 #contact {
