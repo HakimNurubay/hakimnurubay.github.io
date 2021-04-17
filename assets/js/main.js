@@ -253,9 +253,9 @@
   
     var feed = new Instafeed({
         get: 'user',
-        userId: '1177798209316178',
+        userId: '12407035503',
         limit: 12,
-        resolution: "thumbnail",
+        resolution: 'standard_resolution',
         accessToken: 'IGQVJXbHlfLWtQcDNBOXp5aUxQdklmSWRWRjhkazdmWG9tN1RhUGNKNjJiRlhJY3VJUlBQa3RqbnZAEMFdmTzdoMVRXSGZACckNjSlVhWXZAhVWRxdGd2Tnh1Y05OSnFiV2llUXZAWZAU5DNVlTYlROMmUtYQZDZD',
 		template: '<div class="col gallery instaimg"><a href="{{image}}" title="{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption" class="img-fluid"/></a></div>',
 	});
