@@ -771,6 +771,17 @@ span.img-text:hover {
   opacity: 0;
   transform: translate();
 } */
+.buttongram {
+  background: #0b63dc;
+  border-radius: 50px;
+  padding: 8px 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.buttongram:hover {
+  background: #3f7dd3;
+  color: #fff;
+}
 /* Contact Section
 --------------------------------*/
 #contact {
