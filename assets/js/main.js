@@ -1,6 +1,5 @@
 /**
-* Template Name: LHT SANS - v5.0.0
-* Template URL: https://hakimnurubay.github.io/LHT-SANS/
+* Template Name: Hakim Nurubay
 * Author: Hakim Nurubay
 * License: All right reserved by Hakim N.
 */
