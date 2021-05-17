@@ -213,6 +213,10 @@
             </div>
             <div class="news-wrap">
                 <center>
+                  <div class="container">	
+                    <div id="instagram-feed-demo" class="instagram_feed"></div>
+                  </div>
+
                     <div id="instafeed" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gallery news-item img-fluid" data-aos="fade-up" data-aos-delay="100"></div>
                     <p>
                         <div class="btn btn-primary btn-sm loadmore buttongram">Load More</div>
@@ -329,6 +333,28 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/vendor/instagramfeed/jquery.instagramFeed.js"></script>
+
+    <script>
+      (function($){
+         $(window).on('load', function(){
+           $.instagramFeed({
+             'username': 'hakimn_world',
+             'container': "#instagram-feed-demo",
+             'display_profile': true,
+             'display_biography': true,
+             'display_gallery': false,
+             'get_raw_json': false,
+             'callback': null,
+             'styling': true,
+             'items': 36,
+             'items_per_row': 6,
+             'margin': 0.3
+           });
+         });
+       })(jQuery);
+       </script>
 
     <!-- Scroll Top -->
     <script>
