@@ -752,6 +752,7 @@ span.img-text:hover {
   width: 280px;
   height: 280px;
   overflow: hidden;
+  transition: 0.4s;
 }
 .instaimg img:hover {
   opacity: 0.8;
@@ -777,9 +778,10 @@ span.img-text:hover {
   padding: 8px 25px;
   font-weight: 400;
   color: #fff;
+  transition: 0.4s;
 }
 .buttongram:hover {
-  background: #3f7dd3;
+  background: #5190e9;
   color: #fff;
 }
 /* Contact Section
@@ -897,6 +899,7 @@ span.img-text:hover {
   background: #0b63dc;
   border: 0;
   padding: 10px 24px;
+  font-weight: 400;
   color: #fff;
   transition: 0.4s;
 }
