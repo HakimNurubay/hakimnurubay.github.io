@@ -232,7 +232,7 @@
             var width = (100 - options.margin * 2 * options.items_per_row) / options.items_per_row;
             styles = {
                 profile_container: ' style="text-align:center;"',
-                profile_image: ' style="border-radius:10em;width:15%;max-width:125px;min-width:50px;"',
+                profile_image: ' style="border-radius:10em;width:15%;max-width:125px;min-width:125px;"',
                 profile_name: ' style="font-size:1.2em;"',
                 profile_biography: ' style="font-size:1em;"',
                 gallery_image: ' style="width:100%;"',
