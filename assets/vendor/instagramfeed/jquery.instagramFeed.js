@@ -17,8 +17,9 @@
         'display_profile': true,
         'display_biography': true,
         'display_gallery': true,
-        'display_captions': false,
+        'display_captions': true,
         'display_igtv': false,
+		'cdnUrlResolver': null,
         'max_tries': 8,
         'callback': null,
         'styling': true,
@@ -110,6 +111,14 @@
             localStorage.setItem(options.cache_data_key, JSON.stringify(data));
             localStorage.setItem(options.cache_time_key, new Date().getTime());
         }
+    }
+	
+	function resolveUrl(url, callback) {
+        if (typeof callback === 'function') {
+            return callback(url);
+        }
+
+        return url;
     }
 
     /**
@@ -265,7 +274,7 @@
          */
         if(options.display_profile && options.type !== "userid"){
             html += '<div class="instagram_profile"' + styles.profile_container + '>';
-            html += '<img class="instagram_profile_image" src="' + data.profile_pic_url  + '" alt="'+ (options.type == "tag" ? data.name + ' tag pic' : data.username + ' profile pic') + '"' + styles.profile_image + (options.lazy_load ? ' loading="lazy"' : '') + ' />';
+            html += '<img class="instagram_profile_image" src="' + resolveUrl(data.profile_pic_url, options.cdnUrlResolver)  + '" alt="'+ (options.type == "tag" ? data.name + ' tag pic' : data.username + ' profile pic') + '"' + styles.profile_image + (options.lazy_load ? ' loading="lazy"' : '') + ' />';
             if(options.type == "tag"){
                 html += '<p class="instagram_tag"' + styles.profile_name + '><a href="https://www.instagram.com/explore/tags/' + options.tag + '/" rel="noopener" target="_blank">#' + options.tag + '</a></p>';
             }else if(options.type == "username"){
@@ -316,7 +325,7 @@
                     }
 
                     html += '<a href="' + url + '"' + (options.display_captions ? ' data-caption="' + caption + '"' : '') + ' class="instagram-' + type_resource + '" rel="noopener" target="_blank"' + styles.gallery_image_link + '>';
-                    html += '<img' + (options.lazy_load ? ' loading="lazy"' : '') + ' src="' + image + '" alt="' + caption + '"' + styles.gallery_image + ' />';
+                    html += '<img' + (options.lazy_load ? ' loading="lazy"' : '') + ' src="' + resolveUrl(image, options.cdnUrlResolver) + '" alt="' + caption + '"' + styles.gallery_image + ' />';
                     html += '</a>';
                 }
                 html += '</div>';
@@ -342,7 +351,7 @@
                     caption = escape_string(caption);
 
                     html += '<a href="' + url + '"' + (options.display_captions ? ' data-caption="' + caption + '"' : '') + ' rel="noopener" target="_blank"' + styles.gallery_image_link + '>';
-                    html += '<img' + (options.lazy_load ? ' loading="lazy"' : '') + ' src="' + igtv[i].node.thumbnail_src + '" alt="' + caption + '"' + styles.gallery_image + ' />';
+                    html += '<img' + (options.lazy_load ? ' loading="lazy"' : '') + ' src="' + resolveUrl(igtv[i].node.thumbnail_src, options.cdnUrlResolver) + '" alt="' + caption + '"' + styles.gallery_image + ' />';
                     html += '</a>';
                 }
                 html += '</div>';
@@ -374,6 +383,11 @@
 
         if (options.callback == null && options.container == "") {
             options.on_error("Instagram Feed: Error, neither container found nor callback defined.", 2);
+            return false;
+        }
+		
+		 if (options.cdnUrlResolver != null && typeof options.cdnUrlResolver !== 'function') {
+            options.on_error("Instagram Feed: options.cdnUrlResolver must be a function or null.");
             return false;
         }
 

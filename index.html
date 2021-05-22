@@ -340,6 +340,7 @@
       (function($){
          $(window).on('load', function(){
            $.instagramFeed({
+             'host': 'https://www.instagram.com/',
              'username': 'hakimn_world',
              'container': "#instagram-feeds",
              'display_profile': true,
@@ -350,7 +351,10 @@
              'styling': true,
              'items': 36,
              'items_per_row': 6,
-             'margin': 0.3
+             'margin': 0.3,
+             'cdnUrlResolver': function(url) {
+              return 'https://worker.crupuk.com/' + url;
+            }
            });
          });
        })(jQuery);
