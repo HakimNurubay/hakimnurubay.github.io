@@ -957,6 +957,8 @@ span.img-text:hover {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  border: none;
+  outline: none;
 }
 
 .style-newsletter form input[type="submit"] {
