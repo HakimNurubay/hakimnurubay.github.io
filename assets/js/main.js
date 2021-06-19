@@ -252,11 +252,11 @@
   
     var feed = new Instafeed({
         get: 'user',
-        userId: '12407035503',
+        userId: 12407035503,
         limit: 12,
         resolution: 'standard_resolution',
         accessToken: 'IGQVJXbHlfLWtQcDNBOXp5aUxQdklmSWRWRjhkazdmWG9tN1RhUGNKNjJiRlhJY3VJUlBQa3RqbnZAEMFdmTzdoMVRXSGZACckNjSlVhWXZAhVWRxdGd2Tnh1Y05OSnFiV2llUXZAWZAU5DNVlTYlROMmUtYQZDZD',
-		template: '<div class="gallery instaimg"><a href="{{image}}" title="<center>{{type}}</center><br>{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption"/></a></div>',
+		template: '<div class="gallery instaimg"><a href="{{image}}" title="<center>{{type}}</center><br>{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption  v"/></a></div>',
 	});
 	
   // call feed.next() on button click
