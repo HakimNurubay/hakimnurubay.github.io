@@ -269,7 +269,11 @@
                     <div class="form-group mt-3 my-3">
                       <textarea class="form-control" name="message" rows="5" placeholder="Type your message here..." required></textarea>
                     </div>
-                    <div class="text-center"><button type="submit" class="btn btn-primary text-white btn-send">Submit</button></div>
+
+                    <div class="g-recaptcha" data-sitekey="6LfX_FkbAAAAAJZOaosDoSuNgaAV9PT702tjPkM3" data-callback="onSubmit" data-size="invisible">
+                    </div>
+
+                    <div class="text-center"><button type="submit" class="btn btn-primary text-white btn-send g-recaptcha" data-sitekey="6LfX_FkbAAAAAJZOaosDoSuNgaAV9PT702tjPkM3" data-callback='onSubmit'>Submit</button></div>
                     <div class="text-center"><button class="btn btn-primary text-white btn-loading d-none" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         Loading...
@@ -319,6 +323,8 @@
     <!-- End Footer -->
 
     <a class="back-to-top d-flex align-items-center justify-content-center" id="tombolScrollTop" onclick="scrolltotop()"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets//font-awesome/js/all.js"></script>
