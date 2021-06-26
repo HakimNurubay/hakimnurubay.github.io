@@ -255,7 +255,7 @@
         userId: 12407035503,
         limit: 12,
         resolution: 'standard_resolution',
-        accessToken: 'IGQVJXbHlfLWtQcDNBOXp5aUxQdklmSWRWRjhkazdmWG9tN1RhUGNKNjJiRlhJY3VJUlBQa3RqbnZAEMFdmTzdoMVRXSGZACckNjSlVhWXZAhVWRxdGd2Tnh1Y05OSnFiV2llUXZAWZAU5DNVlTYlROMmUtYQZDZD',
+        accessToken: 'IGQVJXdnM0YXh2WXhDYXZASUUpaR3ZASNGtDSlNrMDVteGVIaTA0UHp2QmxqLXVOYUdnemVvdm5EYkI5OUpod0E2MnlkQ3QwVlhNaUFWeC1oT3NDSXREa0NORHJFVmNRODVGQW9lT3lmbzJqQ3o2T3ZArdgZDZD',
 		template: '<div class="gallery instaimg"><a href="{{image}}" title="<center>{{type}}</center><br>{{caption}}" src="{{image}" target="_blank"><img src="{{image}}" alt="caption  v"/></a></div>',
 	});
 	
