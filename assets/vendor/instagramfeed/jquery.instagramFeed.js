@@ -9,9 +9,9 @@
 (function ($) {
     var defaults = {
         'host': "https://www.instagram.com/",
-        'username': 'hakimn_world',
+        'username': 'instagram',
         'tag': '',
-        'user_id': '12407035503',
+        'user_id': '2220311520',
         'location': '',
         'container': '',
         'display_profile': true,

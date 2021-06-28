@@ -342,16 +342,20 @@
         $(window).on("load", function () {
           $.instagramFeed({
             host: "https://www.instagram.com/",
+            user_id: "12407035503",
             username: "hakimn_world",
             container: "#instagram-feeds",
             display_profile: true,
             display_biography: true,
             display_gallery: true,
+            display_captions: true,
+            display_igtv: false,
             get_raw_json: false,
             callback: null,
+            max_tries: 8,
             styling: true,
             items: 36,
-            items_per_row: 6,
+            items_per_row: 4,
             lazy_load: true,
             margin: 0.3,
             cdnUrlResolver: function (url) {
